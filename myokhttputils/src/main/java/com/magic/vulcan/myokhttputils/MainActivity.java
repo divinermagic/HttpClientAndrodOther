@@ -3,6 +3,7 @@ package com.magic.vulcan.myokhttputils;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String baseUrl = "http://35.185.149.228";
 
+    private static final String TAG = MainActivity.class.getCanonicalName();
 
     private Button getBtn,postPairsBtn,upLoadFileBtn;
 
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 MyOkHttpClient.getmInstance().httpGet(baseUrl + "user/get-big-direction", null, new NetResultCallBack() {
                     @Override
                     public void onResult(String body) {
-
+                        Log.i(TAG,"onResult:"+body);
                     }
 
                     @Override
