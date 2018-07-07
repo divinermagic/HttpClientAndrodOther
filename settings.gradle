@@ -1,1 +1,1 @@
-include ':app', ':httpurlconnection', ':okhttp', ':okhttputils', ':retrofit', ':retrofitrxjava', ':userinfoactivity', ':myokhttputils'
+include ':app', ':httpurlconnection', ':okhttp', ':okhttputils', ':retrofit', ':retrofitrxjava', ':userinfoactivity', ':myokhttputils', ':retrofitutils'
