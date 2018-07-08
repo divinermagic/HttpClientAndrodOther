@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/userIconRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/userIconHeight"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorBlue02">
+
+        <com.secularbird.netproject.ui.component.CircleImageView
+            android:id="@+id/userIcon"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:layout_centerInParent="true"
+            android:src="@drawable/defaulticon" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/userInfoRelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userIconRl"
+        android:orientation="vertical"
+        android:padding="@dimen/loginContentRl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginLayMarginTop"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/registerBtnHeight"
+                android:layout_weight="2"
+                android:text="用户名:"
+                android:textSize="@dimen/btnTxtSize" />
+
+            <TextView
+                android:id="@+id/userNameTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/registerBtnHeight"
+                android:layout_marginLeft="@dimen/loginBtnMarginLeft"
+                android:layout_weight="5"
+                android:text="jikexueyuanjgc"
+                android:textSize="@dimen/btnTxtSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginLayMarginTop"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <TextView
+                android:id="@+id/userID"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/registerBtnHeight"
+                android:layout_weight="2"
+                android:text="用户ID:"
+                android:textSize="@dimen/btnTxtSize" />
+
+            <TextView
+                android:id="@+id/userIDTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/registerBtnHeight"
+                android:layout_marginLeft="@dimen/loginBtnMarginLeft"
+                android:layout_weight="5"
+                android:text="0012"
+                android:textSize="@dimen/btnTxtSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginLayMarginTop"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <TextView
+                android:id="@+id/userType"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/registerBtnHeight"
+                android:layout_weight="2"
+                android:text="用户类型:"
+                android:textSize="@dimen/btnTxtSize" />
+
+            <TextView
+                android:id="@+id/userTypeTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/registerBtnHeight"
+                android:layout_marginLeft="@dimen/loginBtnMarginLeft"
+                android:layout_weight="5"
+                android:text="老师"
+                android:textSize="@dimen/btnTxtSize" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

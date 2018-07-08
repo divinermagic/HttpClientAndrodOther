@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="userNameEdtHeight">48dp</dimen>
+    <dimen name="registerBtnHeight">40dp</dimen>
+    <dimen name="loginLayMarginTop">16dp</dimen>
+    <dimen name="passWordEdtMarginTop">8dp</dimen>
+    <dimen name="userNameEdtPadding">8dp</dimen>
+    <dimen name="edtTxtSzie">16sp</dimen>
+    <dimen name="loginBtnMarginLeft">16dp</dimen>
+    <dimen name="loginContentRl">16dp</dimen>
+    <dimen name="btnTxtSize">20sp</dimen>
+    <dimen name="userIconHeight">260dp</dimen>
+    <dimen name="iconSize">100dp</dimen>
+</resources>

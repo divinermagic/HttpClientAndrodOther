@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBuleBg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/contentRelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_corner_bg"
+        android:padding="@dimen/loginContentRl">
+
+        <EditText
+            android:id="@+id/userNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/userNameEdtHeight"
+            android:background="@drawable/selector_edittext_bg"
+            android:hint="@string/userNameEdtHint"
+            android:padding="@dimen/userNameEdtPadding"
+            android:textSize="@dimen/edtTxtSzie" />
+
+        <EditText
+            android:id="@+id/passWordEdt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/userNameEdtHeight"
+            android:layout_below="@+id/userNameEdt"
+            android:layout_marginTop="@dimen/passWordEdtMarginTop"
+            android:background="@drawable/selector_edittext_bg"
+            android:hint="@string/passWordEdtHint"
+            android:padding="@dimen/userNameEdtPadding"
+            android:textSize="@dimen/edtTxtSzie" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passWordEdt"
+            android:layout_marginTop="@dimen/loginLayMarginTop"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/registerBtnHeight"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button_register_bg"
+                android:text="@string/registerBtnTxt"
+                android:textColor="@color/colorBule01"
+                android:textSize="@dimen/btnTxtSize" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/registerBtnHeight"
+                android:layout_marginLeft="@dimen/loginBtnMarginLeft"
+                android:layout_weight="1"
+                android:background="#1c7ef6"
+                android:text="@string/loginBtnTxt"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/btnTxtSize" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

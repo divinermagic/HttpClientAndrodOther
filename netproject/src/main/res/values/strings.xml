@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NetProject</string>
+    <string name="userNameEdtHint">请输入用户名</string>
+    <string name="passWordEdtHint">请输入密码</string>
+    <string name="registerBtnTxt">注册</string>
+    <string name="loginBtnTxt">登录</string>
+</resources>
